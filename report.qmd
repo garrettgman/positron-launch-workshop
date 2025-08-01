@@ -1,0 +1,20 @@
+---
+title: "Untitled"
+format: html
+---
+
+```{r}
+library(tidyverse)
+library(gt)
+
+cars <- read_csv("data.csv")
+```
+
+
+```{r}
+car |> 
+    ggplot(aes(x = displ, y = hwy, color = "drv")) +
+    geom_point() + 
+    theme_minimal()
+```
+
