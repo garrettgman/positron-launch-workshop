@@ -1,14 +1,20 @@
 ---
 title: "Very Important Cars Report"
 format: html
+execute:
+  echo: false
 ---
 
 ```{r}
+#| include: false
+
 library(tidyverse)
 library(gt)
 
 cars <- read_csv("data.csv")
 ```
+
+As engine size increases, mileage declines. Please consider this when purchasing our company fleet.
 
 
 ```{r}
